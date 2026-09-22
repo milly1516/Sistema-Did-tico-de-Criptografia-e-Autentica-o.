@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Final - Desafios de Programação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Painel de Desafios</h1>
+
+    <!-- Desafio 1 -->
+    <section class="card">
+      <h2>1. Inversão Digital de Senha</h2>
+      <div class="form-group">
+        <input type="text" id="senhaInput" value="4567" placeholder="Digite uma senha numérica">
+        <button onclick="executarInversao()">Inverter Senha</button>
+      </div>
+      <p class="resultado" id="resultadoInversao"></p>
+    </section>
+
+    <!-- Desafio 2 -->
+    <section class="card">
+      <h2>2. Mapeamento ASCII de Contato</h2>
+      <div class="form-group">
+        <input type="text" id="nomeInput" value="bruno" placeholder="Digite um nome">
+        <button onclick="executarASCII()">Converter para ASCII</button>
+      </div>
+      <ul class="lista-ascii" id="resultadoASCII"></ul>
+    </section>
+
+    <!-- Desafio 3 -->
+    <section class="card">
+      <h2>3. Codificador Avançado</h2>
+      <div class="form-group">
+        <input type="text" id="textoCodificar" value="Bruno 123!" placeholder="Digite o texto">
+        <input type="number" id="chaveShift" value="3" style="width: 70px;">
+        <button onclick="executarCodificacao()">Codificar</button>
+      </div>
+      <p class="resultado" id="resultadoCodificacao"></p>
+    </section>
+
+    <!-- Desafio 4 -->
+    <section class="card">
+      <h2>4. Teste de Colisão de Hash</h2>
+      <div class="form-group">
+        <input type="text" id="palavra1" value="roma">
+        <input type="text" id="palavra2" value="amor">
+        <button onclick="executarHash()">Comparar Hashes</button>
+      </div>
+      <p class="resultado" id="resultadoHash"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
